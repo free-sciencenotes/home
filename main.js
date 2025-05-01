@@ -40,6 +40,10 @@ function draw() {
   // Clear
   drawRect(0, 0, canvas.width, canvas.height, "black");
 
+  ctx.fillStyle = "white";
+  ctx.font = "32px Arial";
+  ctx.fillText(score, canvas.width / 4, 40);
+
   drawNet();
   drawRect(0, playerY, paddleWidth, paddleHeight, "white");
   drawRect(canvas.width - paddleWidth, aiY, paddleWidth, paddleHeight, "white");
