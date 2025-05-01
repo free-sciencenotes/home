@@ -1,6 +1,9 @@
 const canvas = document.getElementById("gameCanvas");
 const ctx = canvas.getContext("2d");
 
+// Score
+let score = 0;
+
 // Game objects
 let paddleHeight = 80;
 let paddleWidth = 10;
@@ -57,6 +60,7 @@ function update() {
     ball.x - ball.radius < paddleWidth &&
     ball.y > playerY &&
     ball.y < playerY + paddleHeight
+    score = score + 1
   ) {
     ball.speedX *= -1;
   }
