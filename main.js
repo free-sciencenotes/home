@@ -42,7 +42,7 @@ function draw() {
 
   ctx.fillStyle = "white";
   ctx.font = "32px Arial";
-  ctx.fillText(score, canvas.width / 4, 40);
+  ctx.fillText(score, 0, 0);
 
   drawNet();
   drawRect(0, playerY, paddleWidth, paddleHeight, "white");
