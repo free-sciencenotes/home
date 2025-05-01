@@ -8,12 +8,6 @@ document.addEventListener("DOMContentLoaded", () => {
     score++;
     scoreDisplay.textContent = score;
 
-    const areaWidth = gameArea.clientWidth;
-    const areaHeight = gameArea.clientHeight;
-
-    const x = Math.random() * (areaWidth - 100);
-    const y = Math.random() * (areaHeight - 100);
-
     circle.style.left = `${x}px`;
     circle.style.top = `${y}px`;
   });
